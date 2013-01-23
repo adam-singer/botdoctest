@@ -1,0 +1,307 @@
+
+[
+  {
+    "kind": "library",
+    "name": "metadata",
+    "children": [
+      {
+        "superclass": {
+          "name": "Object",
+          "refId": "Object"
+        },
+        "kind": "class",
+        "comment": "Metadata that specifies that that member is editable through generated\nfiles.",
+        "name": "DocsEditable",
+        "children": [
+          {
+            "returnType": {
+              "name": "dynamic",
+              "refId": "dynamic"
+            },
+            "kind": "method",
+            "name": "DocsEditable",
+            "id": "DocsEditable0()"
+          },
+          {
+            "returnType": {
+              "name": "dynamic",
+              "refId": "dynamic"
+            },
+            "kind": "constructor",
+            "name": "DocsEditable",
+            "id": "DocsEditable0()"
+          }
+        ],
+        "id": "DocsEditable"
+      },
+      {
+        "superclass": {
+          "name": "Object",
+          "refId": "Object"
+        },
+        "kind": "class",
+        "comment": "\nMetadata that specifies the DOM name associated with the element.\n\nThis is used for API generation.\n\n[name] should be formatted as `interface.member`.\n",
+        "name": "DomName",
+        "children": [
+          {
+            "returnType": {
+              "name": "dynamic",
+              "refId": "dynamic"
+            },
+            "kind": "method",
+            "name": "DomName",
+            "children": [
+              {
+                "ref": {
+                  "name": "String",
+                  "refId": "String"
+                },
+                "kind": "param",
+                "name": "name",
+                "id": "name"
+              }
+            ],
+            "id": "DomName1()"
+          },
+          {
+            "ref": {
+              "name": "String",
+              "refId": "String"
+            },
+            "kind": "property",
+            "name": "name",
+            "id": "name"
+          },
+          {
+            "returnType": {
+              "name": "dynamic",
+              "refId": "dynamic"
+            },
+            "kind": "constructor",
+            "name": "DomName",
+            "children": [
+              {
+                "ref": {
+                  "name": "String",
+                  "refId": "String"
+                },
+                "kind": "param",
+                "name": "name",
+                "id": "name"
+              }
+            ],
+            "id": "DomName1()"
+          }
+        ],
+        "id": "DomName"
+      },
+      {
+        "superclass": {
+          "name": "Object",
+          "refId": "Object"
+        },
+        "kind": "class",
+        "comment": "\nAn annotation used to mark an API as being experimental.\n\nAn API is considered to be experimental if it is still going through the\nprocess of stabilizing and is subject to change or removal.\n\nSee also:\n\n* [W3C recommendation](http://en.wikipedia.org/wiki/W3C_recommendation)\n",
+        "name": "Experimental",
+        "children": [
+          {
+            "returnType": {
+              "name": "dynamic",
+              "refId": "dynamic"
+            },
+            "kind": "method",
+            "name": "Experimental",
+            "id": "Experimental0()"
+          },
+          {
+            "returnType": {
+              "name": "dynamic",
+              "refId": "dynamic"
+            },
+            "kind": "constructor",
+            "name": "Experimental",
+            "id": "Experimental0()"
+          }
+        ],
+        "id": "Experimental"
+      },
+      {
+        "superclass": {
+          "name": "Object",
+          "refId": "Object"
+        },
+        "kind": "class",
+        "comment": "\nAn annotation used to mark a feature as only being supported by a subset\nof the browsers that Dart supports by default.\n\nIf an API is not annotated with [SupportedBrowser] then it is assumed to\nwork on all browsers Dart supports.\n",
+        "name": "SupportedBrowser",
+        "children": [
+          {
+            "returnType": {
+              "name": "dynamic",
+              "refId": "dynamic"
+            },
+            "kind": "method",
+            "name": "SupportedBrowser",
+            "children": [
+              {
+                "ref": {
+                  "name": "String",
+                  "refId": "String"
+                },
+                "kind": "param",
+                "name": "browserName",
+                "id": "browserName"
+              },
+              {
+                "ref": {
+                  "name": "String",
+                  "refId": "String"
+                },
+                "isOptional": true,
+                "kind": "param",
+                "name": "minimumVersion",
+                "id": "minimumVersion"
+              }
+            ],
+            "id": "SupportedBrowser2()"
+          },
+          {
+            "ref": {
+              "name": "String",
+              "refId": "String"
+            },
+            "isStatic": true,
+            "kind": "property",
+            "name": "CHROME",
+            "id": "CHROME"
+          },
+          {
+            "ref": {
+              "name": "String",
+              "refId": "String"
+            },
+            "isStatic": true,
+            "kind": "property",
+            "name": "FIREFOX",
+            "id": "FIREFOX"
+          },
+          {
+            "ref": {
+              "name": "String",
+              "refId": "String"
+            },
+            "isStatic": true,
+            "kind": "property",
+            "name": "IE",
+            "id": "IE"
+          },
+          {
+            "ref": {
+              "name": "String",
+              "refId": "String"
+            },
+            "isStatic": true,
+            "kind": "property",
+            "name": "OPERA",
+            "id": "OPERA"
+          },
+          {
+            "ref": {
+              "name": "String",
+              "refId": "String"
+            },
+            "isStatic": true,
+            "kind": "property",
+            "name": "SAFARI",
+            "id": "SAFARI"
+          },
+          {
+            "ref": {
+              "name": "String",
+              "refId": "String"
+            },
+            "kind": "property",
+            "name": "browserName",
+            "id": "browserName"
+          },
+          {
+            "ref": {
+              "name": "String",
+              "refId": "String"
+            },
+            "kind": "property",
+            "name": "minimumVersion",
+            "id": "minimumVersion"
+          },
+          {
+            "returnType": {
+              "name": "dynamic",
+              "refId": "dynamic"
+            },
+            "kind": "constructor",
+            "name": "SupportedBrowser",
+            "children": [
+              {
+                "ref": {
+                  "name": "String",
+                  "refId": "String"
+                },
+                "kind": "param",
+                "name": "browserName",
+                "id": "browserName"
+              },
+              {
+                "ref": {
+                  "name": "String",
+                  "refId": "String"
+                },
+                "isOptional": true,
+                "kind": "param",
+                "name": "minimumVersion",
+                "id": "minimumVersion"
+              }
+            ],
+            "id": "SupportedBrowser2()"
+          }
+        ],
+        "id": "SupportedBrowser"
+      }
+    ],
+    "id": "file:///Users/adam/Documents/DartEditor/dart/dart-sdk/lib/html/html_common/metadata.dart"
+  },
+  {
+    "kind": "library",
+    "name": "supercoollib.dart",
+    "children": [
+      {
+        "returnType": {
+          "name": "void",
+          "refId": "void"
+        },
+        "kind": "method",
+        "name": "reverseText",
+        "children": [
+          {
+            "ref": {
+              "name": "Event",
+              "refId": "Event"
+            },
+            "kind": "param",
+            "name": "event",
+            "id": "event"
+          }
+        ],
+        "id": "reverseText1()"
+      },
+      {
+        "returnType": {
+          "name": "void",
+          "refId": "void"
+        },
+        "kind": "method",
+        "name": "main",
+        "id": "main0()"
+      }
+    ],
+    "id": "file:///Users/adam/dart/botdoctest/lib/supercoollib.dart"
+  }
+]
