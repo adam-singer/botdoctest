@@ -1,0 +1,6 @@
+name: botdoctest
+description: A sample web application
+dependencies:
+  browser: any
+  bot:
+    git: git://github.com/kevmoo/bot.dart.git
