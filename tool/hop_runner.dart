@@ -5,29 +5,11 @@ import 'dart:io';
 import 'package:bot/bot.dart';
 import 'package:bot/hop.dart';
 import 'package:bot/hop_tasks.dart';
-//import '../test/harness_console.dart' as test_console;
 
 void main() {
   _assertKnownPath();
 
-  addSyncTask('hello', (ctx) {
-    ctx.fine('Welcome to HOP!');
-    return true;
-  });
-
- // addTask('test', createUnitTestTask(test_console.testCore));
   addTask('docs', getCompileDocsFunc('origin/gh-pages', 'packages/', _getLibs));
-
-  //
-  // Dart2js
-  //
-//  final paths = ['click', 'drag', 'fract', 'frames', 'nav', 'spin']
-//      .mappedBy((d) => "example/$d/${d}_demo.dart")
-//      .toList();
-//  paths.add('test/harness_browser.dart');
-//
-//  addTask('dart2js', createDart2JsTask(paths,
-//      liveTypeAnalysis: true, rejectDeprecatedFeatures: true));
 
   runHopCore();
 }
