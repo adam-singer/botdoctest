@@ -16,7 +16,7 @@ void main() {
   });
 
  // addTask('test', createUnitTestTask(test_console.testCore));
-  addTask('docs', getCompileDocsFunc('gh-pages', 'packages/', _getLibs));
+  addTask('docs', getCompileDocsFunc('origin/gh-pages', 'packages/', _getLibs));
 
   //
   // Dart2js
